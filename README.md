@@ -42,7 +42,6 @@ To run the M-SCAN framework, you need to set up a Python environment with the fo
 - `ultralytics`: YOLO models and utilities for object detection.
 - `natsort`: For natural sorting of file names.
 - `albumentations`: Fast image augmentation library.
-- `albumentations[imgaug]`: Extra augmentation features from `imgaug`.
 
 To install these dependencies, you can use the following command:
 
