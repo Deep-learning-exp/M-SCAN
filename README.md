@@ -20,28 +20,31 @@ M-SCAN introduces a multistage approach that leverages both Sagittal and Axial M
 The framework is trained on the RSNA 2024 Lumbar Spine Degenerative dataset, comprising 1,975 studies labeled across five intervertebral disc levels (L1/L2, L2/L3, L3/L4, L4/L5, and L5/S1). Each study includes Sagittal and Axial MRI slices, categorized into Normal/Mild, Moderate, or Severe SCS.
 
 ## Installation
-To run the M-SCAN framework, you need to set up a Python environment with the following dependencies.
-os
-gc
-sys
-Pillow==10.0.0          # For handling images
-opencv-python-headless  # For image processing
-numpy                   # For numerical computations
-pandas                  # For data manipulation
-glob2                   # For file pattern matching
-tqdm                    # For progress bars
-matplotlib              # For plotting
-scikit-learn            # For KFold cross-validation
-pydicom                 # For DICOM file handling
-torch                   # PyTorch framework for deep learning
-torchvision             # For PyTorch vision utilities
-timm                    # Pretrained vision models
-transformers            # Hugging Face Transformers library
-ultralytics             # YOLO models and utilities
-natsort                 # For natural sorting of file names
-albumentations          # For image augmentation
-albumentations[imgaug]  # Extra augmentation features
 
+To run the M-SCAN framework, you need to set up a Python environment with the following dependencies:
+
+- `os`: Standard Python library for interacting with the operating system.
+- `gc`: Standard Python library for garbage collection.
+- `sys`: Standard Python library for system-specific parameters and functions.
+- `Pillow==10.0.0`: For handling images.
+- `opencv-python-headless`: For image processing without GUI dependencies.
+- `numpy`: For numerical computations.
+- `pandas`: For data manipulation and analysis.
+- `glob2`: For file pattern matching and file handling.
+- `tqdm`: For progress bars and progress tracking.
+- `matplotlib`: For creating static, animated, and interactive visualizations.
+- `scikit-learn`: For machine learning utilities, including KFold cross-validation.
+- `pydicom`: For handling DICOM files, commonly used in medical imaging.
+- `torch`: PyTorch framework for deep learning.
+- `torchvision`: Provides datasets, model architectures, and image transformations for computer vision.
+- `timm`: Pretrained vision models and utilities.
+- `transformers`: Hugging Face's library for state-of-the-art natural language processing models.
+- `ultralytics`: YOLO models and utilities for object detection.
+- `natsort`: For natural sorting of file names.
+- `albumentations`: Fast image augmentation library.
+- `albumentations[imgaug]`: Extra augmentation features from `imgaug`.
+
+To install these dependencies, you can use the following command:
 
 ## Results
 The framework was trained and evaluated on 80% of the dataset for training and 20% for testing. The final results are as follows:
@@ -53,12 +56,4 @@ The framework was trained and evaluated on 80% of the dataset for training and 2
 | CNN (Multi-View) + GRU             | 92.60%   | 0.321    | 0.891 |
 | **Multi-View Cross Attention (Ours)** | **93.80%**   | **0.282**    | **0.971** |
 
-## Citation
-If you find this work useful in your research, please cite the following paper:
-```bibtex
-@inproceedings{batra2024mscan,
-  title={M-SCAN: A Multistage Framework for Lumbar Spinal Canal Stenosis Grading Using Multi-View Cross Attention},
-  author={Batra, Arnesh and Gumber, Arush and Kumar, Anushk},
-  booktitle={Proceedings of the Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
-  year={2024}
-}
+
