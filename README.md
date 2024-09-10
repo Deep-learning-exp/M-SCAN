@@ -16,6 +16,8 @@ M-SCAN introduces a multistage approach that leverages both Sagittal and Axial M
 
 - **High Performance:** The framework achieves a predictive accuracy of 93.80% and an AUROC of 0.971, outperforming existing benchmarks.
 
+PreTrained Models - https://drive.google.com/drive/folders/1DgCNnRz49w3WirwJMAskf-s6zf7DVaPs?usp=sharing 
+
 ## Dataset
 The framework is trained on the RSNA 2024 Lumbar Spine Degenerative dataset, comprising 1,975 studies labeled across five intervertebral disc levels (L1/L2, L2/L3, L3/L4, L4/L5, and L5/S1). Each study includes Sagittal and Axial MRI slices, categorized into Normal/Mild, Moderate, or Severe SCS.
 
